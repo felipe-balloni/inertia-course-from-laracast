@@ -1,4 +1,6 @@
 <template>
+    <Head title="Users" />
+
     <h1 class="text-3xl font-bold">Hello, I'm users page!</h1>
 
     <div class="" style="margin-top: 400px">

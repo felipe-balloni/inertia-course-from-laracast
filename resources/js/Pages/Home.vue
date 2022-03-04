@@ -1,10 +1,19 @@
 <template>
-        <h1 class="text-3xl font-bold">Hello, {{ name }}!</h1>
+    <Head>
+        <title>Home</title>
+        <meta
+            type="description"
+            content="Home information"
+            head-key="description"
+        >
+    </Head>
 
-        <p>In this series, we will use the following frameworks</p>
-        <ul class="list-disc">
-            <li v-for="framework of frameworks" v-text="framework"></li>
-        </ul>
+    <h1 class="text-3xl font-bold">Hello, {{ name }}!</h1>
+
+    <p>In this series, we will use the following frameworks</p>
+    <ul class="list-disc">
+        <li v-for="framework of frameworks" v-text="framework"></li>
+    </ul>
 </template>
 
 <script>
