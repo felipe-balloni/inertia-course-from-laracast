@@ -13,14 +13,11 @@
     </Layout>
 </template>
 
-<script>
-import Layout from '../Shared/Layout'
-import { Link } from '@inertiajs/inertia-vue3'
+<script setup>
+    import Layout from '../Shared/Layout'
+    import {Link} from '@inertiajs/inertia-vue3'
 
-export default {
-    name: "Users",
-    components: { Layout, Link },
-
-    props: { time: String, }
-}
+    defineProps({
+        time: String,
+    })
 </script>

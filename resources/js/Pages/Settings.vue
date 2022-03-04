@@ -5,11 +5,6 @@
     </Layout>
 </template>
 
-<script>
+<script setup>
 import Layout from '../Shared/Layout'
-
-export default {
-    name: "Settings",
-    components: { Layout },
-}
 </script>

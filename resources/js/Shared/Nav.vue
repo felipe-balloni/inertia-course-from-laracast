@@ -17,12 +17,7 @@
     </nav>
 </template>
 
-<script>
+<script setup>
 import {Link} from '@inertiajs/inertia-vue3'
 import NavItem from '../Shared/NavItem'
-
-export default {
-    name: "Nav",
-    components: {Link, NavItem},
-}
 </script>
