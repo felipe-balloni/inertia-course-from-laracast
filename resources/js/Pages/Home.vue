@@ -1,17 +1,18 @@
 <template>
-    <h1 class="text-4xl font-bold">Hello, {{ name }}!</h1>
+    <Layout>
 
-    <Nav />
+        <h1 class="text-3xl font-bold">Hello, {{ name }}!</h1>
 
-    <p>In this series, we will use the following frameworks</p>
-    <ul>
-        <li v-for="framework of frameworks" v-text="framework"></li>
-    </ul>
+        <p>In this series, we will use the following frameworks</p>
+        <ul class="list-disc">
+            <li v-for="framework of frameworks" v-text="framework"></li>
+        </ul>
 
+    </Layout>
 </template>
 
 <script>
-import Nav from '../Shared/Nav'
+import Layout from '../Shared/Layout'
 
 export default {
     name: "Home",
@@ -19,6 +20,6 @@ export default {
         name: String,
         frameworks: Array,
     },
-    components: { Nav },
+    components: { Layout },
 }
 </script>

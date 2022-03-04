@@ -1,14 +1,15 @@
 <template>
-    <h1>Hello, I'm settings page!</h1>
+    <Layout>
+        <h1 class="text-3xl font-bold">Hello, I'm settings page!</h1>
 
-    <Nav />
+    </Layout>
 </template>
 
 <script>
-import Nav from '../Shared/Nav'
+import Layout from '../Shared/Layout'
 
 export default {
     name: "Settings",
-    components: { Nav },
+    components: { Layout },
 }
 </script>
