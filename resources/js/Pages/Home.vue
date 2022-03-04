@@ -9,6 +9,10 @@
 
 <script>
 export default {
-    name: 'Home'
+    name: 'Home',
+    props: {
+        name: String,
+        frameworks: Array,
+    }
 }
 </script>

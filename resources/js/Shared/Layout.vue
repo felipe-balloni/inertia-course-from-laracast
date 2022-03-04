@@ -20,9 +20,10 @@
 
 <script>
 import Nav from './Nav'
+
 export default {
-    name: "Layout",
-    components: { Nav },
+    name: 'Layout',
+    components: {Nav},
     computed: {
         username() {
             return this.$page.props.auth.user.username;
