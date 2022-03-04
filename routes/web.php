@@ -20,3 +20,12 @@ Route::get('/', function () {
         'frameworks' => ['Laravel', 'Inertia', 'Vue']
     ]);
 });
+
+Route::get('/users', function () {
+    sleep(2);
+    return Inertia::render('Users');
+});
+
+Route::get('/settings', function () {
+    return Inertia::render('Settings');
+});
